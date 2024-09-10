@@ -1,0 +1,19 @@
+{
+  "name": "grpc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start-degree": "node ./degree/main.js",
+    "start-processor": "node ./process/main.js",
+    "start-main": "node ./main/main.js",
+    "start": "concurrently \"npm run start-degree\" \"npm run start-processor\" \"npm run start-main\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.11.2",
+    "express": "^4.20.0"
+  }
+}
